@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZI8-BM-oFa">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -23,31 +23,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4do-yl-MJS">
-                                <rect key="frame" x="163" y="161" width="48" height="42"/>
+                                <rect key="frame" x="163" y="205" width="48" height="42"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="35"/>
                                 <color key="textColor" red="0.94901960784313721" green="0.65098039215686276" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wednesday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eow-61-1uJ">
-                                <rect key="frame" x="86" y="65" width="203.5" height="42"/>
+                                <rect key="frame" x="86" y="109" width="203.5" height="42"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="35"/>
                                 <color key="textColor" red="0.94901960780000005" green="0.65098039220000004" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="September" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JIu-X4-Rqz">
-                                <rect key="frame" x="100" y="115" width="175.5" height="38.5"/>
+                                <rect key="frame" x="100" y="159" width="175.5" height="38.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
                                 <color key="textColor" red="0.94901960784313721" green="0.65098039215686276" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pA-4R-nAb">
-                                <rect key="frame" x="149" y="211" width="77.5" height="38.5"/>
+                                <rect key="frame" x="149" y="255" width="77.5" height="38.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
                                 <color key="textColor" red="0.94901960780000005" green="0.65098039220000004" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="th" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdf-GB-wei">
-                                <rect key="frame" x="219" y="161" width="18" height="21"/>
+                                <rect key="frame" x="219" y="205" width="18" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Pw3-te-iHb"/>
                                 </constraints>
@@ -56,7 +56,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Todays Calories:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tp3-FS-KFH">
-                                <rect key="frame" x="41" y="320" width="162" height="27"/>
+                                <rect key="frame" x="41" y="364" width="162" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="162" id="ADg-lL-du5"/>
                                     <constraint firstAttribute="height" constant="27" id="leV-Kv-SCR"/>
@@ -65,33 +65,57 @@
                                 <color key="textColor" red="0.92550104856491089" green="0.53482383347141105" blue="0.35257294697875463" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="9999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUb-vh-pbg">
-                                <rect key="frame" x="139" y="396" width="55" height="27"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="90" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUb-vh-pbg">
+                                <rect key="frame" x="228" y="364" width="99" height="27"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="27" id="151-0H-Cd2"/>
-                                    <constraint firstAttribute="width" constant="162" id="yOn-F0-aa9"/>
+                                    <constraint firstAttribute="height" constant="27" id="5Ht-EN-xxR"/>
+                                    <constraint firstAttribute="width" constant="99" id="Sua-Xs-BGR"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="textColor" red="0.92550104860000004" green="0.53482383349999996" blue="0.35257294700000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4q-7T-q5o">
+                                <rect key="frame" x="128.5" y="411" width="117" height="33"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <state key="normal" title="Add food entry"/>
+                                <connections>
+                                    <segue destination="diJ-01-wpQ" kind="show" id="XKo-bZ-jaW"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dhS-xf-DhW" userLabel="Nav Bar Divison ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="SJ6-NM-B9C"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="4pA-4R-nAb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1G7-zl-P3g"/>
+                            <constraint firstItem="b4q-7T-q5o" firstAttribute="top" secondItem="gUb-vh-pbg" secondAttribute="bottom" constant="20" id="8cL-9Y-HC9"/>
+                            <constraint firstItem="dhS-xf-DhW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9oH-hl-QU6"/>
                             <constraint firstItem="eow-61-1uJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ARu-FF-PAt"/>
+                            <constraint firstItem="gUb-vh-pbg" firstAttribute="top" secondItem="pdf-GB-wei" secondAttribute="bottom" constant="138" id="EQL-rp-kBy"/>
+                            <constraint firstItem="b4q-7T-q5o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K8G-Vd-uAi"/>
+                            <constraint firstItem="gUb-vh-pbg" firstAttribute="top" secondItem="Tp3-FS-KFH" secondAttribute="top" id="Ktv-MJ-qFx"/>
                             <constraint firstItem="JIu-X4-Rqz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mb7-rK-2gS"/>
                             <constraint firstItem="4pA-4R-nAb" firstAttribute="top" secondItem="4do-yl-MJS" secondAttribute="bottom" constant="8" id="P6J-pf-6VG"/>
                             <constraint firstItem="4do-yl-MJS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z6m-5W-Vy7"/>
+                            <constraint firstItem="gUb-vh-pbg" firstAttribute="leading" secondItem="Tp3-FS-KFH" secondAttribute="trailing" constant="25" id="hn1-Fe-VXe"/>
                             <constraint firstItem="pdf-GB-wei" firstAttribute="top" secondItem="JIu-X4-Rqz" secondAttribute="bottom" constant="7.5" id="ho4-e0-839"/>
                             <constraint firstItem="4do-yl-MJS" firstAttribute="top" secondItem="JIu-X4-Rqz" secondAttribute="bottom" constant="8" id="iTQ-JI-aOb"/>
                             <constraint firstItem="Tp3-FS-KFH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="j3i-oZ-zcF"/>
                             <constraint firstItem="eow-61-1uJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="45" id="mBg-tT-YnT"/>
                             <constraint firstItem="pdf-GB-wei" firstAttribute="leading" secondItem="4do-yl-MJS" secondAttribute="trailing" constant="8" id="oEF-ih-nqd"/>
+                            <constraint firstItem="dhS-xf-DhW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="qNW-87-cTe"/>
                             <constraint firstItem="Tp3-FS-KFH" firstAttribute="top" secondItem="4pA-4R-nAb" secondAttribute="bottom" constant="70.5" id="rTe-yO-3Uh"/>
+                            <constraint firstAttribute="trailing" secondItem="dhS-xf-DhW" secondAttribute="trailing" id="tNK-zl-jTu"/>
                             <constraint firstItem="JIu-X4-Rqz" firstAttribute="top" secondItem="eow-61-1uJ" secondAttribute="bottom" constant="8" id="x9t-Sq-uNl"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="UYU-P6-8r9"/>
                     <connections>
                         <outlet property="dateLabel" destination="4do-yl-MJS" id="EiO-8r-rCJ"/>
                         <outlet property="dateSuffixLabel" destination="pdf-GB-wei" id="kSo-z1-ocE"/>
@@ -101,6 +125,70 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="138.98050974512745"/>
+        </scene>
+        <!--Add Food Entry View Controller-->
+        <scene sceneID="tmA-a9-SK7">
+            <objects>
+                <viewController id="diJ-01-wpQ" customClass="AddFoodEntryViewController" customModule="Personal_Health_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xV2-gZ-tSE"/>
+                        <viewControllerLayoutGuide type="bottom" id="HAD-VX-NS5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lfm-fi-XVI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N8e-Ec-sfl" userLabel="Nav Bar Divison ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="FLT-AP-h1H"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NiI-xY-pQt">
+                                <rect key="frame" x="172" y="291" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eGi-XA-6SR">
+                                <rect key="frame" x="85" y="291" width="204" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="N8e-Ec-sfl" firstAttribute="top" secondItem="xV2-gZ-tSE" secondAttribute="bottom" id="BcD-kY-bJb"/>
+                            <constraint firstAttribute="trailing" secondItem="N8e-Ec-sfl" secondAttribute="trailing" id="IPt-6e-e4n"/>
+                            <constraint firstItem="N8e-Ec-sfl" firstAttribute="leading" secondItem="lfm-fi-XVI" secondAttribute="leading" id="cpO-bv-qzq"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wev-vd-gmp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1856.8" y="138.98050974512745"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XdC-Bz-g6k">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZI8-BM-oFa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vl5-bz-xN6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ZcP-Dl-djj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hrf-8H-uLi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>

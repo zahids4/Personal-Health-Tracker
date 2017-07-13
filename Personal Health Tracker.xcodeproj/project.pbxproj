@@ -13,6 +13,7 @@
 		2750BF4B1F17CCDF00C490C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2750BF4A1F17CCDF00C490C6 /* Assets.xcassets */; };
 		2750BF4E1F17CCDF00C490C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2750BF4C1F17CCDF00C490C6 /* LaunchScreen.storyboard */; };
 		2750BF571F17D6D900C490C6 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2750BF561F17D6D900C490C6 /* Date+Extensions.swift */; };
+		2750BF591F17F55700C490C6 /* AddFoodEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2750BF581F17F55700C490C6 /* AddFoodEntryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2750BF4D1F17CCDF00C490C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2750BF4F1F17CCDF00C490C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2750BF561F17D6D900C490C6 /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		2750BF581F17F55700C490C6 /* AddFoodEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFoodEntryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +58,14 @@
 		2750BF421F17CCDF00C490C6 /* Personal Health Tracker */ = {
 			isa = PBXGroup;
 			children = (
-				2750BF431F17CCDF00C490C6 /* AppDelegate.swift */,
-				2750BF451F17CCDF00C490C6 /* LandingPage.swift */,
-				2750BF551F17D68B00C490C6 /* Extensions */,
-				2750BF471F17CCDF00C490C6 /* Main.storyboard */,
-				2750BF4A1F17CCDF00C490C6 /* Assets.xcassets */,
-				2750BF4C1F17CCDF00C490C6 /* LaunchScreen.storyboard */,
 				2750BF4F1F17CCDF00C490C6 /* Info.plist */,
+				2750BF431F17CCDF00C490C6 /* AppDelegate.swift */,
+				2750BF581F17F55700C490C6 /* AddFoodEntryViewController.swift */,
+				2750BF451F17CCDF00C490C6 /* LandingPage.swift */,
+				2750BF4A1F17CCDF00C490C6 /* Assets.xcassets */,
+				2750BF551F17D68B00C490C6 /* Extensions */,
+				2750BF4C1F17CCDF00C490C6 /* LaunchScreen.storyboard */,
+				2750BF471F17CCDF00C490C6 /* Main.storyboard */,
 			);
 			path = "Personal Health Tracker";
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			files = (
 				2750BF461F17CCDF00C490C6 /* LandingPage.swift in Sources */,
 				2750BF441F17CCDF00C490C6 /* AppDelegate.swift in Sources */,
+				2750BF591F17F55700C490C6 /* AddFoodEntryViewController.swift in Sources */,
 				2750BF571F17D6D900C490C6 /* Date+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
