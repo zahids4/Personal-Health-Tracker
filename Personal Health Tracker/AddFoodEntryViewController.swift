@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import AudioToolbox
 
 class AddFoodEntryViewController: UIViewController {
+    @IBOutlet weak var caloriesTextField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,14 +24,27 @@ class AddFoodEntryViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func enterButtonPressed(_ sender: Any) {
+        if caloriesTextField == nil || caloriesTextField.text == "" {
+            vibratePhone()
+            caloriesTextField.placeholder = "Enter a caloric amount"
+        } else {
+            performSegue(withIdentifier: "unwindSegueToLandingPage", sender: nil)
+        }
     }
-    */
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "unwindSegueToLandingPage" {
+            let landingPageVC = segue.destination as! LandingPage
+            landingPageVC.caloriesToAdd = Int(caloriesTextField.text!)!
+        }
+    }
 
+}
+
+extension AddFoodEntryViewController {
+    func vibratePhone() {
+        let feedbackGenerator = UIImpactFeedbackGenerator(style: .heavy)
+        feedbackGenerator.impactOccurred()
+    }
 }

@@ -14,11 +14,23 @@ class LandingPage: UIViewController {
     @IBOutlet weak var dateSuffixLabel: UILabel!
     @IBOutlet weak var monthLabel: UILabel!
     @IBOutlet weak var yearLabel: UILabel!
+    @IBOutlet weak var currentCaloriesLabel: UILabel!
+    
+    fileprivate var currentCalories = 0
+    
+    public var caloriesToAdd: Int?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configureLabels()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if caloriesToAdd != nil {
+            currentCaloriesLabel.text = totalCalories()
+        }
     }
     
     fileprivate func configureLabels() {
@@ -27,13 +39,19 @@ class LandingPage: UIViewController {
         dateLabel.text = String(dateComponents().2)
         dateSuffixLabel.text = dateSuffix(from: Date())
         dayOfWeekLabel.text = dateComponents().3
+        currentCaloriesLabel.text = String(currentCalories)
+    }
+    
+    fileprivate func totalCalories() -> String {
+        currentCalories += caloriesToAdd!
+        return String(currentCalories)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
+    
+    @IBAction func unwindFromAddFoodEntryVC(segue:UIStoryboardSegue) { }
 
 }
 

@@ -65,19 +65,10 @@
                                 <color key="textColor" red="0.92550104856491089" green="0.53482383347141105" blue="0.35257294697875463" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="90" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUb-vh-pbg">
-                                <rect key="frame" x="228" y="364" width="99" height="27"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="27" id="5Ht-EN-xxR"/>
-                                    <constraint firstAttribute="width" constant="99" id="Sua-Xs-BGR"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                <color key="textColor" red="0.92550104860000004" green="0.53482383349999996" blue="0.35257294700000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4q-7T-q5o">
                                 <rect key="frame" x="128.5" y="411" width="117" height="33"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="tintColor" red="0.94901960780000005" green="0.65098039220000004" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Add food entry"/>
                                 <connections>
                                     <segue destination="diJ-01-wpQ" kind="show" id="XKo-bZ-jaW"/>
@@ -90,6 +81,16 @@
                                     <constraint firstAttribute="height" constant="1" id="SJ6-NM-B9C"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUb-vh-pbg">
+                                <rect key="frame" x="228" y="364" width="99" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="5Ht-EN-xxR"/>
+                                    <constraint firstAttribute="width" constant="99" id="Sua-Xs-BGR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" red="0.92550104860000004" green="0.53482383349999996" blue="0.35257294700000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -117,6 +118,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="UYU-P6-8r9"/>
                     <connections>
+                        <outlet property="currentCaloriesLabel" destination="gUb-vh-pbg" id="2un-eU-QBe"/>
                         <outlet property="dateLabel" destination="4do-yl-MJS" id="EiO-8r-rCJ"/>
                         <outlet property="dateSuffixLabel" destination="pdf-GB-wei" id="kSo-z1-ocE"/>
                         <outlet property="dayOfWeekLabel" destination="eow-61-1uJ" id="8dl-1p-OCK"/>
@@ -147,30 +149,60 @@
                                     <constraint firstAttribute="height" constant="1" id="FLT-AP-h1H"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NiI-xY-pQt">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NiI-xY-pQt">
                                 <rect key="frame" x="172" y="291" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eGi-XA-6SR">
-                                <rect key="frame" x="85" y="291" width="204" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eGi-XA-6SR">
+                                <rect key="frame" x="77" y="291" width="221" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="221" id="1Hz-ao-UBd"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter amount of calories " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUB-Ru-Mxi">
+                                <rect key="frame" x="92" y="260" width="191" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="191" id="rkw-bE-54n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.92550104860000004" green="0.53482383349999996" blue="0.35257294700000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zK-ZH-fDL">
+                                <rect key="frame" x="169" y="349" width="37" height="30"/>
+                                <color key="tintColor" red="0.94901960780000005" green="0.65098039220000004" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Enter"/>
+                                <connections>
+                                    <action selector="enterButtonPressed:" destination="diJ-01-wpQ" eventType="touchUpInside" id="TMf-mw-WDq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="N8e-Ec-sfl" firstAttribute="top" secondItem="xV2-gZ-tSE" secondAttribute="bottom" id="BcD-kY-bJb"/>
+                            <constraint firstItem="HAD-VX-NS5" firstAttribute="top" secondItem="eGi-XA-6SR" secondAttribute="bottom" constant="346" id="FOl-Xn-S1h"/>
                             <constraint firstAttribute="trailing" secondItem="N8e-Ec-sfl" secondAttribute="trailing" id="IPt-6e-e4n"/>
+                            <constraint firstItem="NUB-Ru-Mxi" firstAttribute="centerX" secondItem="lfm-fi-XVI" secondAttribute="centerX" id="Ih1-2n-zgb"/>
+                            <constraint firstItem="5zK-ZH-fDL" firstAttribute="centerX" secondItem="lfm-fi-XVI" secondAttribute="centerX" id="MZ7-Ez-YJ1"/>
+                            <constraint firstItem="eGi-XA-6SR" firstAttribute="top" secondItem="NUB-Ru-Mxi" secondAttribute="bottom" constant="10" id="Qbq-Zq-Db7"/>
                             <constraint firstItem="N8e-Ec-sfl" firstAttribute="leading" secondItem="lfm-fi-XVI" secondAttribute="leading" id="cpO-bv-qzq"/>
+                            <constraint firstItem="5zK-ZH-fDL" firstAttribute="top" secondItem="eGi-XA-6SR" secondAttribute="bottom" constant="28" id="eXH-7U-89z"/>
+                            <constraint firstItem="eGi-XA-6SR" firstAttribute="centerX" secondItem="lfm-fi-XVI" secondAttribute="centerX" id="mC5-9e-wKY"/>
+                            <constraint firstItem="eGi-XA-6SR" firstAttribute="top" secondItem="NiI-xY-pQt" secondAttribute="top" id="yJ0-NX-1Df"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="caloriesTextField" destination="eGi-XA-6SR" id="QFv-5z-SxQ"/>
+                        <segue destination="KuD-UW-P5c" kind="unwind" identifier="unwindSegueToLandingPage" unwindAction="unwindFromAddFoodEntryVCWithSegue:" id="4zN-Cv-zfU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wev-vd-gmp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="KuD-UW-P5c" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1856.8" y="138.98050974512745"/>
         </scene>
