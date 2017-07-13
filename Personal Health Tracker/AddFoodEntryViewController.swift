@@ -11,24 +11,27 @@ import AudioToolbox
 
 class AddFoodEntryViewController: UIViewController {
     @IBOutlet weak var caloriesTextField: UITextField!
-
+    @IBOutlet weak var foodNameTextField: UITextField!
+    
+    var foodArray: [Food] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        print(foodArray)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 
     @IBAction func enterButtonPressed(_ sender: Any) {
         if caloriesTextField == nil || caloriesTextField.text == "" {
             vibratePhone()
-            caloriesTextField.placeholder = "Enter a caloric amount"
+            caloriesTextField.placeholder = "You have not entered an amount"
         } else {
+            let newFood = Food(name: foodNameTextField.text!, calories: Int(caloriesTextField.text!)!)
+            foodArray.append(newFood)
             performSegue(withIdentifier: "unwindSegueToLandingPage", sender: nil)
         }
     }
@@ -39,12 +42,10 @@ class AddFoodEntryViewController: UIViewController {
             landingPageVC.caloriesToAdd = Int(caloriesTextField.text!)!
         }
     }
-
 }
 
 extension AddFoodEntryViewController {
     func vibratePhone() {
-        let feedbackGenerator = UIImpactFeedbackGenerator(style: .heavy)
-        feedbackGenerator.impactOccurred()
+        AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
     }
 }
