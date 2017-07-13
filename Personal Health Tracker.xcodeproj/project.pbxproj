@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		2750BF441F17CCDF00C490C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2750BF431F17CCDF00C490C6 /* AppDelegate.swift */; };
-		2750BF461F17CCDF00C490C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2750BF451F17CCDF00C490C6 /* ViewController.swift */; };
+		2750BF461F17CCDF00C490C6 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2750BF451F17CCDF00C490C6 /* LandingPage.swift */; };
 		2750BF491F17CCDF00C490C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2750BF471F17CCDF00C490C6 /* Main.storyboard */; };
 		2750BF4B1F17CCDF00C490C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2750BF4A1F17CCDF00C490C6 /* Assets.xcassets */; };
 		2750BF4E1F17CCDF00C490C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2750BF4C1F17CCDF00C490C6 /* LaunchScreen.storyboard */; };
+		2750BF571F17D6D900C490C6 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2750BF561F17D6D900C490C6 /* Date+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2750BF401F17CCDF00C490C6 /* Personal Health Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Personal Health Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2750BF431F17CCDF00C490C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2750BF451F17CCDF00C490C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2750BF451F17CCDF00C490C6 /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
 		2750BF481F17CCDF00C490C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2750BF4A1F17CCDF00C490C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2750BF4D1F17CCDF00C490C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2750BF4F1F17CCDF00C490C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2750BF561F17D6D900C490C6 /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +57,22 @@
 			isa = PBXGroup;
 			children = (
 				2750BF431F17CCDF00C490C6 /* AppDelegate.swift */,
-				2750BF451F17CCDF00C490C6 /* ViewController.swift */,
+				2750BF451F17CCDF00C490C6 /* LandingPage.swift */,
+				2750BF551F17D68B00C490C6 /* Extensions */,
 				2750BF471F17CCDF00C490C6 /* Main.storyboard */,
 				2750BF4A1F17CCDF00C490C6 /* Assets.xcassets */,
 				2750BF4C1F17CCDF00C490C6 /* LaunchScreen.storyboard */,
 				2750BF4F1F17CCDF00C490C6 /* Info.plist */,
 			);
 			path = "Personal Health Tracker";
+			sourceTree = "<group>";
+		};
+		2750BF551F17D68B00C490C6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2750BF561F17D6D900C490C6 /* Date+Extensions.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +148,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2750BF461F17CCDF00C490C6 /* ViewController.swift in Sources */,
+				2750BF461F17CCDF00C490C6 /* LandingPage.swift in Sources */,
 				2750BF441F17CCDF00C490C6 /* AppDelegate.swift in Sources */,
+				2750BF571F17D6D900C490C6 /* Date+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
